@@ -247,7 +247,7 @@ void QvkWebcam::set640x480()
 
 void QvkWebcam::setNoBorder()
 {
-  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
+  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::ToolTip );
   show();
   setValueBorder( false );
 }

@@ -2189,7 +2189,7 @@ void screencast::Countdown()
     
     QFrame * countdownDialog = new QFrame();
     countdownDialog->setGeometry( x, y, Width, Height );
-    countdownDialog->setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
+    countdownDialog->setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::ToolTip );
     if( QX11Info::isCompositingManagerRunning() )
        countdownDialog->setAttribute( Qt::WA_TranslucentBackground, true );
     
@@ -2257,7 +2257,7 @@ void screencast::record()
     if ( firststartWininfo == false )
     {
 /*      
-      TestFrame->setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
+      TestFrame->setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::ToolTip );
       //QCoreApplication::processEvents( QEventLoop::AllEvents );     
       TestFrame->show();
       //TestFrame->hide();

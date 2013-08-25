@@ -10,7 +10,7 @@ QvkWinInfo::QvkWinInfo()
   myWidth = 0;
   myHeight = 0;
   
-  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
+  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::ToolTip );
 
   resize ( 50, 50 );
   

@@ -45,7 +45,7 @@ QToolTip::showText ( QPoint( 300, 300 ), "Aber Hallo", this );
   
   
   setGeometry( x, y, width, height );
-  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint );
+  setWindowFlags( Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::ToolTip );
 
   if( QX11Info::isCompositingManagerRunning() )
     setAttribute( Qt::WA_TranslucentBackground, true );
